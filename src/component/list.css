@@ -1,0 +1,88 @@
+/* .single {
+
+    margin:11px;
+    width:166px;
+    background-color: black;
+    border-color: black;
+    padding:0;
+}
+
+.singleCard {
+
+    border:0;
+    padding:0;
+    
+}
+
+.moviebody {
+
+    background-color: black;
+    height:30px;
+    text-align: center;
+    color:white;
+}
+
+.controlButton {
+   width:100%
+}
+
+.footer {
+    text-align: center;
+
+}
+
+.movieimg {
+    height:236px;
+    margin:0;
+} */
+
+.singleCard {
+    background-color:black;
+    width: 166px;
+    height:300px;
+    border-radius: 5px;
+    padding:0;
+    margin-right:10px;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+.movieimg {
+    height:233px;
+    width:100%;
+}
+
+.moviebody {
+
+    height:30px;
+    text-align: center;
+    color:white;
+}
+
+.footer {
+    display:none;
+}
+
+.singleCard:hover {
+    position:relative;
+    top:-10px;
+    height:320px;
+    width:186px;
+    /* margin-left:30px;
+    margin-right:30px; */
+    margin-bottom:10px;
+    transition: 0.2s
+}
+.singleCard:hover .movieimg {
+    height:253px;
+    width:100%;
+    transition: 0.2s
+}
+
+.singleCard:hover .footer {
+    display:block;
+}
+
+.controlButton {
+    width:100%;
+ }
