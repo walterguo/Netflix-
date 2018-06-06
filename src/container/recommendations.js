@@ -15,7 +15,7 @@ class Recommendations extends Component {
             this.props.recommend.length>0?
             <div className="List2">
                 <div className="listName">
-                     <p>Recommendations</p>
+                     <h4>Recommendations</h4>
                 </div>
                 <div className="List">
                     {this.recommendList()}

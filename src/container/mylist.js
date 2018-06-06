@@ -14,9 +14,9 @@ class MyList extends Component {
      render(){
          return (
              this.props.myList.length>0?
-            <div className="List1">
+             <div className="List1">
                 <div className="listName">
-                     <p>MyList</p>
+                     <h4>MyList</h4>
                 </div>
                 <div className="List">
                     {this.myMovieList()}

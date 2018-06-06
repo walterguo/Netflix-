@@ -46,7 +46,6 @@ const reducer = (state=initialstate,action) => {
                break;
            }
        }
-       console.log(tempstate)
        return {
            'mylist':tempstate['mylist'].slice(),
            'recommendations':tempstate['recommendations'].slice()
@@ -63,15 +62,8 @@ const reducer = (state=initialstate,action) => {
         return {
         'mylist':tempstate['mylist'].slice(),
         'recommendations':tempstate['recommendations'].slice()
-    };
-
-    //    case 'remove':
-    //        return {
-    //            'mylist':state['mylist'].splice(2,1),
-    //            'recommendations':state['recommendations']
-    //        }
-
-       default: return state;
+        };
+      default: return state;
       }
 }
 
