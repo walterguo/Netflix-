@@ -1,0 +1,57 @@
+.singleCard {
+    background-color:black;
+    width: 166px;
+    height:300px;
+    border-radius: 5px;
+    padding:0;
+    margin-right:10px;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+.movieimg {
+    height:233px;
+    width:100%;
+}
+
+.moviebody {
+
+    height:30px;
+    text-align: center;
+    color:white;
+}
+
+.footer {
+    display:none;
+}
+
+.singleCard:hover .footer {
+    display:block;
+}
+
+.controlButton {
+    width:100%;
+ }
+
+ .List {
+    display:flex;
+  }
+  
+  .listName {
+    color:white;
+  }
+
+  .appheader {
+      height:40px;
+      width:100%;
+      color:red;
+      background-color:black;
+      position:fix;
+      top:0;
+      left:0;
+      margin-top:0
+  }
+
+  .wholelist {
+      margin-top:0;
+  }
