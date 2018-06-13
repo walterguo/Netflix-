@@ -34,6 +34,9 @@
 
  .List {
     display:flex;
+    overflow-x:auto;
+    overflow-y:hidden;
+    min-width: 700px;
   }
   
   .listName {
@@ -42,13 +45,13 @@
 
   .appheader {
       height:30px;
-      width:100%;
+      width:90%;
       color:red;
       background-color:black;
       position:fixed;
       top:0;
-      left:100px;
-      margin-top:10px;
+      left:5%;
+   
   }
 
   .wholelist {
@@ -56,9 +59,14 @@
   }
 
   .List1 {
+      margin:0 auto;
       margin-top:50px;
+      overflow-x:auto;
+      overflow-y:hidden;
   }
 
   .List2 {
+    margin:0 auto;
     margin-top:50px;
+    overflow-x:auto;
 }
