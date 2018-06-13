@@ -12,7 +12,7 @@ class DoubleLists extends Component {
        return (
            <div className="appheader">
                 <div className="headerLeft">
-                    <h3>NetFlix</h3>
+                    <h3>NETFLIX</h3>
                 </div>
             </div>
        )
@@ -24,10 +24,42 @@ class DoubleLists extends Component {
     })
     }
 
+   myList1 = () => {
+       if(this.props.myList.length>0) {
+           return (
+            <div className="List1">
+              <div className="listName">
+                <h4>MyList</h4>
+             </div>
+             <div className="List">
+                  {this.myMovieList()}
+              </div>
+            </div>
+           )
+       } else 
+        return null;
+   }
+
     recommendList = () => {
       return this.props.recommend.map((post) => {
         return <List movie={post} type="add" id={this.props._id} url={this.url} manipulate={this.props.updateLists} key={post['id']}/>
      })
+    }
+
+    recommendMovieList = () => {
+        if(this.props.recommend.length>0) {
+            return (
+                <div className="List2">
+                <div className="listName">
+                    <h4>Recommendations</h4>
+               </div>
+               <div className="List">
+                    {this.recommendList()}
+              </div>
+            </div>
+            )
+        } else 
+        return null;
     }
 
     componentDidMount() {
@@ -38,22 +70,8 @@ class DoubleLists extends Component {
      return(  
                <div className="wholelist">
                    {this.header()}
-                  <div className="List1">
-                      <div className="listName">
-                          <h4>MyList</h4>
-                     </div>
-                     <div className="List">
-                         {this.myMovieList()}
-                     </div>
-                  </div>
-                  <div className="List2">
-                      <div className="listName">
-                          <h4>Recommendations</h4>
-                     </div>
-                     <div className="List">
-                          {this.recommendList()}
-                    </div>
-                  </div>
+                  {this.myList1()}
+                  {this.recommendMovieList()}
               </div>
      )
     }

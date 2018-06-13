@@ -5,8 +5,7 @@
     border-radius: 5px;
     padding:0;
     margin-right:10px;
-    margin-bottom:30px;
-    text-align: center;
+        text-align: center;
 }
 
 .movieimg {
@@ -42,16 +41,24 @@
   }
 
   .appheader {
-      height:40px;
+      height:30px;
       width:100%;
       color:red;
       background-color:black;
-      position:fix;
+      position:fixed;
       top:0;
-      left:0;
-      margin-top:0
+      left:100px;
+      margin-top:10px;
   }
 
   .wholelist {
       margin-top:0;
   }
+
+  .List1 {
+      margin-top:50px;
+  }
+
+  .List2 {
+    margin-top:50px;
+}
